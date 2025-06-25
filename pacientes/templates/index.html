@@ -5,8 +5,15 @@
 </head>
 <body>
     {% if user.is_authenticated %} <!-- Autenticação de usuário-->
-        <p>Bem-vindo, {{ user.username }} | <a href="{% url 'logout' %}">Sair</a></p>
-        
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <p style="margin: 0;">Bem-vindo, {{ user.username }}</p>
+            <form action="{% url 'logout' %}" method="post" style="margin: 0;">
+                {% csrf_token %}
+                <button type="submit" class="link-button">Sair</button>
+            </form>
+        </div>
+
+
         <h2>Cadastro de Paciente</h2>
         <form id="triagem-form" method="POST">
             {% csrf_token %}
