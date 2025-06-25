@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *$py.class
+pacientes/migrations/0001_initial.py
 
 # Django
 *.log

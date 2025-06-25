@@ -34,7 +34,7 @@ cepInput.addEventListener('input', () => {
     }
 });
 
-// Captura o evento de envio do formulário
+/* Captura o evento de envio do formulário
 document.getElementById('triagem-form').addEventListener('submit', (e) => {
     // Impede o envio padrão do formulário (evita recarregar a página)
     e.preventDefault();
@@ -43,4 +43,4 @@ document.getElementById('triagem-form').addEventListener('submit', (e) => {
     alert('Dados enviados:\nNome: ' + document.getElementById('nome').value +
           '\nCEP: ' + cepInput.value +
           '\nEndereço: ' + enderecoInput.value);
-});
+});*/
