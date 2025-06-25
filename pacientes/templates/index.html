@@ -4,7 +4,7 @@
     {% load static %}
 </head>
 <body>
-    <!-- {% if user.is_authenticated %} -->
+    {% if user.is_authenticated %} <!-- Autenticação de usuário-->
         <p>Bem-vindo, {{ user.username }} | <a href="{% url 'logout' %}">Sair</a></p>
         
         <h2>Cadastro de Paciente</h2>
@@ -24,7 +24,7 @@
         
         <script src="{% static 'script.js' %}"></script>
 
-    <!-- {% else %}
+    {% else %}
         <p><a href="{% url 'login' %}">Fazer login</a></p>
-    {% endif %} -->
+    {% endif %}
 </body>
