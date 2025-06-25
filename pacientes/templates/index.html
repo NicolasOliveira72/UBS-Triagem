@@ -1,0 +1,3 @@
+{% if user.is_authenticated %}
+  <p>Bem-vindo, {{ user.username }} | <a href="{% url 'logout' %}">Sair</a></p>
+{% endif %}
